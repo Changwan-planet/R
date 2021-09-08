@@ -1,3 +1,5 @@
+#If you run your R script, then just enter "Rscript *.r"
+
 #set the working directory
 #setwd("/home/changwan/R")
 
@@ -46,5 +48,6 @@ is.na(capacity)  #To chekc a set of scores for missing data.
 #the count of the x
 length(x)
 
+sum(x) / length(x) 
 
 print("hello world")
