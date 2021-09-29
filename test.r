@@ -39,15 +39,53 @@ vv
 
 ls()
 
-capacity <- c(14,13,14,13,16,NA,NA,20,NA)
-m <-mean(capacity,na.rm=TRUE)
-m
+capacity <- c(14,13,14,13,16,NA,NA,20,NA) #NA : not available
+m <-mean(capacity,na.rm=TRUE)   #na.rm=remove not availiable
 
-is.na(capacity)  #To chekc a set of scores for missing data.
+is.na(capacity)  
+
+#is.na=is not available. Logical question.
+#To check a set of scores for missing data.
 
 #the count of the x
 length(x)
 
 sum(x) / length(x) 
 
+
+# R Functions
+# returns the substring, which consists of the characters between  
+# the start and stop position. 
+
+substr("abcdefg",2,4)
+substr("abcdefg",4,2)
+substr("abcdefg",stop=4,start=2)
+
+# "abcdefg" is a character vector with one element.
+
+#User-Defined Functions
+
+sumofsquares <- function(x,y,z){ # list the arguments
+    sumsq <- sum(c(x^2,y^2,z^2)) # perform the operations
+    return(sumsq) # return the value
+}
+
+sumofsquares(3,4,5)
+
+#vectors :  R's fundamental structure
+
+#number vector c=components
+x <- c(3,4,5) 
+
+# a character vector
+stooges <- c("Moe","Larry","Curly") 
+
+# a logical vector
+z <- c(T,F,T,F,T,T) 
+
+# specific components of a vector with a bracked number
+stooges[2] 
+
+
 print("hello world")
+
